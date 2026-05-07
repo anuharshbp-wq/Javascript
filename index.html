@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Button pressed')">press</button><br>
+    Enter to change text:<input type="text" id="fname" onchange="textchange()">
+    <h1 onmouseover="this.style.color='blue'" onmouseout="this.style.color='red'">welcome</h1>
+    <input type="text"onfocus="this.style.borderColor='blue'; this.style.outline='none'">
+
+</body>
+<script>
+    function textchange()
+    {
+        var x=document.getElementById("fname");
+        x.value="Text changed";
+    }
+</script>
+</html>
